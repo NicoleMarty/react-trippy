@@ -1,11 +1,10 @@
 .App {
   background-image: url("../src/home-bg.jpg");
   background-size: cover;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
 }
 
 /*@media (prefers-reduced-motion: no-preference) {
@@ -13,16 +12,6 @@
     animation: App-logo-spin infinite 10s linear;
   }
 }*/
-
-.home {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 /*@keyframes App-logo-spin {
   from {
