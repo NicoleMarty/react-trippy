@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import TopNav from './components/TopNav'
 import AppContainer from './components/AppContainer'
-import About from './pages/About'
+import NavBar from './components/NavBar'
+import Home from './pages/Home/index.js'
 import './App.css'
 
 class App extends Component {
@@ -11,12 +10,11 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <TopNav />
           {/*<Route render={history => <SideNav history={history} />} />*/}
           <AppContainer>
+            <NavBar />
             <Route exact path='/' component={Home} />
             <Route exact path='/Home' component={Home} />
-            <Route exact path='/About' component={About} />
           </AppContainer>
         </div>
       </Router>

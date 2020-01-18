@@ -23,18 +23,18 @@ function NavBar () {
         <div className='nav-content'>
           <ul className='tabs tabs-transparent'>
             <li className='tab'>
-              <a href='#test1'>HOME</a>
-            </li>
-            <li className='tab'>
-              <a className='active' href='#test2'>
-                ABOUT
+              <a className='active' href='/'>
+                HOME
               </a>
             </li>
             <li className='tab'>
-              <a href='#test4'>CREATE</a>
+              <a href='/About'>ABOUT</a>
             </li>
             <li className='tab'>
-              <a href='#test5'>EXPLORE</a>
+              <a href='/Create'>CREATE</a>
+            </li>
+            <li className='tab'>
+              <a href='Explore'>EXPLORE</a>
             </li>
           </ul>
         </div>
