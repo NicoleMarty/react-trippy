@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Home from './components/Home'
-import MyLibrary from './components/MyLibrary'
-import ExploreGames from './components/ExploreGames'
+import Home from './pages/Home'
 import SideNav from './components/SideNav'
 import AppContainer from './components/AppContainer'
-import Footer from './pages/Footer'
-import AddGames from './components/AddGames'
-import { AppContext } from './appContext'
+import About from './pages/About'
+import { AppContext } from './AppContext'
 import './App.css'
 
 class App extends Component {
@@ -20,11 +17,8 @@ class App extends Component {
             <AppContainer>
               <Route exact path='/' component={Home} />
               <Route exact path='/Home' component={Home} />
-              <Route exact path='/MyLibrary' component={MyLibrary} />
-              <Route exact path='/ExploreGames' component={ExploreGames} />
-              <Route exact path='/addgames' component={AddGames} />
+              <Route exact path='/About' component={About} />
             </AppContainer>
-            <Footer />
           </div>
         </Router>
       </AppContext.Provider>

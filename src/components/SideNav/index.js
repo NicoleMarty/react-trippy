@@ -1,22 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ls from 'local-storage'
-import { AppContext } from '../../appContext'
-import M from 'materialize-css'
+/*import ls from 'local-storage'*/
+import { AppContext } from '../../AppContext'
 import './style.css'
 
 class SideNav extends React.Component {
   static contextType = AppContext
-
-  componentDidMount () {
-    M.AutoInit()
-  }
-
-  closeNav = () => {
-    const elems = document.querySelectorAll('.sidenav')
-    const instances = M.Sidenav.init(elems)
-    instances[0].close()
-  }
 
   /*logout = event => {
     ls.remove('TrippyTrip_userToken')
@@ -39,13 +28,13 @@ class SideNav extends React.Component {
                 />
               </a>
               <a href={this}>
-                <span id='username' className='name white-text'>
+                {/*<span id='username' className='name white-text'>
                   {ls.get('TrippyTrip_userToken')
                     ? ls.get('TrippyTrip_userFullName')
                       ? ls.get('TrippyTrip_userFullName')
                       : 'Secret Agent User'
                     : 'Please Sign In'}
-                </span>
+                </span>*/}
               </a>
             </div>
           </li>
