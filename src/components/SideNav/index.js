@@ -1,12 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 /*import ls from 'local-storage'*/
-import { AppContext } from '../../AppContext'
 import './style.css'
 
 class SideNav extends React.Component {
-  static contextType = AppContext
-
   /*logout = event => {
     ls.remove('TrippyTrip_userToken')
     ls.remove('TrippyTrip_userFullName')
