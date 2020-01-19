@@ -13,7 +13,7 @@ class Home extends React.Component {
   }
 
   render () {
-    return <div className='container'>zfgzf</div>
+    return <div className='row'></div>
   }
 }
 

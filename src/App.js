@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import AppContainer from './components/AppContainer'
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar/index.js'
 import Home from './pages/Home/index.js'
 import './App.css'
 

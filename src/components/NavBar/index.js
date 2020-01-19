@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 function NavBar () {
   return (
@@ -49,7 +50,7 @@ function NavBar () {
         </li>
       </ul>
 
-      <ul class='sidenav' id='mobile-demo'>
+      <ul className='sidenav' id='mobile-demo'>
         <li>
           <a href='sass.html'>Sass</a>
         </li>
