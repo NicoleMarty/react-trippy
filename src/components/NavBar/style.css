@@ -2,6 +2,11 @@
   background-color: #212121;
 }
 
+a.brand-logo {
+  padding-left: 10px;
+  font-family: "Lobster", cursive;
+}
+
 .nav-content {
   background-color: #424242;
 }

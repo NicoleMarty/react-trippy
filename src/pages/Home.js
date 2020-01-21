@@ -1,6 +1,5 @@
 import React from 'react'
 import M from 'materialize-css'
-import './style.css'
 
 class Home extends React.Component {
   componentDidMount () {
@@ -13,7 +12,7 @@ class Home extends React.Component {
   }
 
   render () {
-    return <div className='row'></div>
+    return <div className='row'>Home</div>
   }
 }
 

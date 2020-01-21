@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 function NavBar () {
@@ -7,7 +8,7 @@ function NavBar () {
       <nav className='nav-extended'>
         <div className='nav-wrapper'>
           <a href={this} className='brand-logo'>
-            Logo
+            Trippy
           </a>
           <a href={this} data-target='mobile-demo' className='sidenav-trigger'>
             <i className='material-icons'>menu</i>
@@ -23,19 +24,36 @@ function NavBar () {
         </div>
         <div className='nav-content'>
           <ul className='tabs tabs-transparent'>
-            <li className='tab'>
-              <a className='active' href='/'>
+            <li className='tab home'>
+              <Link
+                to='/'
+                className={
+                  window.location.pathname === '/' ||
+                  window.location.pathname === '/Home'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
+              >
                 HOME
-              </a>
+              </Link>
             </li>
-            <li className='tab'>
-              <a href='/About'>ABOUT</a>
+            <li className='tab about'>
+              <Link
+                to='/About'
+                className={
+                  window.location.pathname === '/About'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
+              >
+                ABOUT
+              </Link>
             </li>
-            <li className='tab'>
+            <li className='tab create'>
               <a href='/Create'>CREATE</a>
             </li>
-            <li className='tab'>
-              <a href='Explore'>EXPLORE</a>
+            <li className='tab explore'>
+              <a href='/Explore'>EXPLORE</a>
             </li>
           </ul>
         </div>
