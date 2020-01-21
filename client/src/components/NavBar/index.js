@@ -92,7 +92,16 @@ class NavBar extends React.Component {
                 </Link>
               </li>
               <li className='tab create'>
-                <a href='/Create'>CREATE</a>
+                <Link
+                  to='/Create'
+                  className={
+                    window.location.pathname === '/Create'
+                      ? 'nav-link-active'
+                      : 'nav-link'
+                  }
+                >
+                  CREATE{' '}
+                </Link>
               </li>
               <li className='tab explore'>
                 <a href='/Explore'>EXPLORE</a>
